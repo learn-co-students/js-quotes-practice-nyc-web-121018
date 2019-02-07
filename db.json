@@ -1,41 +1,52 @@
 {
   "quotes": [
     {
-      "id": 1,
-      "quote": "Don't count the days, make the days count.",
-      "likes": 1,
-      "author": "Mike Tyson"
-    },
-    {
-      "id": 2,
-      "quote": "There are no secrets to success. It is the result of preparation, hard work, and learning from failure.",
-      "likes": 1,
-      "author": "Collin Powell"
-    },
-    {
-      "id": 3,
-      "quote": "Tell me and I forget, teach me and I remember, involve me and I learn.",
-      "likes": 1,
-      "author": "Benjamin Franklin"
-    },
-    {
-      "id": 4,
-      "quote": "Our greatest glory is not in never falling, but in rising everytime we fall.",
-      "likes": 1,
-      "author": "Confucius"
-    },
-    {
-      "id": 5 ,
+      "id": 5,
       "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
-      "likes": 1,
-      "author": "Winston Churchhill"
+      "likes": 14,
+      "author": "Winston POOPhill"
     },
     {
       "id": 6,
       "quote": "Perseverance is the hard work you do after you get tired of doing the hard work you already did.",
-      "likes": 1,
-      "author": "Newt Gingrich"
+      "likes": 25,
+      "author": "Eye of Newt Gingrich"
+    },
+    {
+      "quote": "Hurr Durrrr durrr hruuurrr durrrrr",
+      "likes": 11,
+      "author": "Me",
+      "id": 7
+    },
+    {
+      "quote": "You're a Wizard Harry.",
+      "likes": 14,
+      "author": "Hagrid",
+      "id": 8
+    },
+    {
+      "quote": "Cockroaches and Cher",
+      "likes": 17,
+      "author": "Cher",
+      "id": 9
+    },
+    {
+      "quote": "La lala alalaaaa",
+      "likes": 10,
+      "author": "Derp Herp McDerps",
+      "id": 10
+    },
+    {
+      "quote": "Absolutely ",
+      "likes": 10,
+      "author": "Gia Gunn",
+      "id": 12
+    },
+    {
+      "quote": "Dobbie's a free elf!",
+      "likes": 52,
+      "author": "Dobbie",
+      "id": 13
     }
-
   ]
 }
