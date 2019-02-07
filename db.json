@@ -1,41 +1,94 @@
 {
   "quotes": [
     {
-      "id": 1,
-      "quote": "Don't count the days, make the days count.",
-      "likes": 1,
-      "author": "Mike Tyson"
-    },
-    {
       "id": 2,
-      "quote": "There are no secrets to success. It is the result of preparation, hard work, and learning from failure.",
-      "likes": 1,
-      "author": "Collin Powell"
+      "quote": "Don't count the days, make the days count.",
+      "likes": 13,
+      "author": "Mike Tyson"
     },
     {
       "id": 3,
       "quote": "Tell me and I forget, teach me and I remember, involve me and I learn.",
-      "likes": 1,
+      "likes": 8,
       "author": "Benjamin Franklin"
     },
     {
       "id": 4,
       "quote": "Our greatest glory is not in never falling, but in rising everytime we fall.",
-      "likes": 1,
+      "likes": 5,
       "author": "Confucius"
     },
     {
-      "id": 5 ,
+      "id": 5,
       "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
-      "likes": 1,
+      "likes": 6,
       "author": "Winston Churchhill"
     },
     {
-      "id": 6,
-      "quote": "Perseverance is the hard work you do after you get tired of doing the hard work you already did.",
-      "likes": 1,
-      "author": "Newt Gingrich"
+      "quote": "I don’t know half of you half as well as I should like; and I like less than half of you half as well as you deserve.",
+      "likes": 4,
+      "author": "Bilbo Baggins",
+      "id": 6
+    },
+    {
+      "quote": "Turn it up to eleven!",
+      "likes": 4,
+      "author": "Unknown",
+      "id": 7
+    },
+    {
+      "quote": "Learning never exhausts the mind.",
+      "likes": 0,
+      "author": "Leonardo da Vinci",
+      "id": 8
+    },
+    {
+      "quote": "All that we see or seem is but a dream within a dream.",
+      "likes": 0,
+      "author": "Edgar Allan Poe",
+      "id": 9
+    },
+    {
+      "quote": "Think in the morning. Act in the noon. Eat in the evening. Sleep in the night.",
+      "likes": 0,
+      "author": "William Blake",
+      "id": 10
+    },
+    {
+      "quote": "The supreme art of war is to subdue the enemy without fighting.",
+      "likes": 3,
+      "author": "Sun Tzu",
+      "id": 11
+    },
+    {
+      "quote": "A new quote",
+      "likes": 3,
+      "author": "Someone great",
+      "id": 12
+    },
+    {
+      "quote": "To be, or not to be, that is the question...",
+      "likes": 4,
+      "author": "Jeffo",
+      "id": 13
+    },
+    {
+      "quote": "Shall i compare thee to a sommers day?",
+      "likes": 4,
+      "author": "Greg",
+      "id": 14
+    },
+    {
+      "quote": "Anyone who has never made a mistake has never tried anything new.",
+      "likes": 4,
+      "author": "Albert Einstein",
+      "id": 15
+    },
+    {
+      "quote": "Life is like riding a bicycle. To keep your balance, you must keep moving.",
+      "likes": 7,
+      "author": "Albert Einstein",
+      "id": 16
     }
-
   ]
 }
