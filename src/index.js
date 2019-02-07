@@ -115,7 +115,6 @@ function  getQuotes(url) {
     .then(data => {
       // sets local varialbe to hold all returned data
       quotes = data
-
       // renders pessimistically
       quoteList.innerHTML = createHTML(quotes)
     })
@@ -146,7 +145,7 @@ function newQuote(url, quote, author) {
 
 // fetch to PATCH when quote is edited
 function editQuote(url, id, quote, author) {
-  fetch(url + `/${id}`, {
+  fetch(`${url}/${id}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
@@ -161,14 +160,14 @@ function editQuote(url, id, quote, author) {
 
 // fetch to delete quote
 function deleteQuote(url, id) {
-  fetch(url + `/${id}`, {
+  fetch(`${url}/${id}`, {
     method: "DELETE"
   })
 }
 
 // fetch to PATCH when quote likes are increased
 function increaseLike(url, id, quote) {
-  fetch(url + `/${id}`, {
+  fetch(`${url}/${id}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
@@ -191,8 +190,8 @@ function createHTML(quoteArray) {
                 <footer class="blockquote-footer">${quote.author}</footer>
                 <br>
                 <button class='btn-success' data-id="${quote.id}">Likes: <span>${quote.likes}</span></button>
-                <button class='btn-danger'data-id="${quote.id}">Delete</button>
-                <button class='btn-warning'data-id="${quote.id}">Edit</button>
+                <button class='btn-danger' data-id="${quote.id}">Delete</button>
+                <button class='btn-warning' data-id="${quote.id}">Edit</button>
               </blockquote>
             </li>`
   }).join("")
