@@ -3,7 +3,7 @@
     {
       "id": 1,
       "quote": "Don't count the days, make the days count.",
-      "likes": 1,
+      "likes": 7,
       "author": "Mike Tyson"
     },
     {
@@ -25,7 +25,7 @@
       "author": "Confucius"
     },
     {
-      "id": 5 ,
+      "id": 5,
       "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
       "likes": 1,
       "author": "Winston Churchhill"
@@ -35,7 +35,72 @@
       "quote": "Perseverance is the hard work you do after you get tired of doing the hard work you already did.",
       "likes": 1,
       "author": "Newt Gingrich"
+    },
+    {
+      "quote": "qwkeker",
+      "author": "wrkhr",
+      "likes": 0,
+      "id": 7
+    },
+    {
+      "quote": "Here's another quote!!",
+      "author": "me",
+      "likes": 0,
+      "id": 8
+    },
+    {
+      "quote": "This should work....",
+      "author": "hopefully?",
+      "likes": 0,
+      "id": 9
+    },
+    {
+      "quote": "Now it works!",
+      "author": "hehe",
+      "likes": 0,
+      "id": 10
+    },
+    {
+      "quote": "I throw gas",
+      "author": "Nolan RYan",
+      "likes": 0,
+      "id": 11
+    },
+    {
+      "quote": "New Quote",
+      "author": "Somebody",
+      "likes": 0,
+      "id": 12
+    },
+    {
+      "quote": "something",
+      "author": "somrthing",
+      "likes": 0,
+      "id": 13
+    },
+    {
+      "quote": "Please work",
+      "author": "I hope this works",
+      "likes": 0,
+      "id": 14
+    },
+    {
+      "quote": "I'm dumb",
+      "author": "This should be good now",
+      "likes": 0,
+      "id": 15
+    },
+    {
+      "quote": "Optimistic render",
+      "author": "I think?",
+      "likes": 0,
+      "id": 16
+    },
+    {
+      "quote": "DOes this work now?",
+      "author": "gahhhhh",
+      "likes": 0,
+      "id": 17
     }
-
   ]
 }
