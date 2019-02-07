@@ -15,7 +15,7 @@
     {
       "id": 4,
       "quote": "Our greatest glory is not in never falling, but in rising everytime we fall.",
-      "likes": 1,
+      "likes": "6",
       "author": "Confucius"
     },
     {
@@ -25,10 +25,10 @@
       "author": "Winston Churchhill"
     },
     {
-      "id": 6,
-      "quote": "Perseverance is the hard work you do after you get tired of doing the hard work you already did.",
-      "likes": 1,
-      "author": "Newt Gingrich"
+      "quote": "pee",
+      "likes": 0,
+      "author": "pee",
+      "id": 6
     }
   ]
 }
