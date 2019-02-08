@@ -5,8 +5,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const quoteList = document.querySelector('#quote-list')
   const newQuoteForm = document.querySelector('#new-quote-form')
+  const sort = document.querySelector('#sort')
+  let allQuotes;
+  let updateQuoteForm;
+  let sortToggle = false
 
   fetchQuotes()
+
+  sort.addEventListener('click', e => {
+    let sortedAuthors = allQuotes.slice().sort(function(a, b) {
+      var nameA = a.author.toUpperCase(); // ignore upper and lowercase
+      var nameB = b.author.toUpperCase(); // ignore upper and lowercase
+      if (nameA < nameB) {
+        return -1;
+      }
+      if (nameA > nameB) {
+        return 1;
+      }
+      // names must be equal
+      return 0;
+    });
+
+    sortToggle = !sortToggle
+
+    console.log(sortToggle);
+    if (sortToggle) {
+      renderAllQuotes(sortedAuthors)
+    } else {
+      renderAllQuotes(allQuotes)
+      console.log('rendering all');
+    }
+  })
 
   newQuoteForm.addEventListener('submit', e => {
     e.preventDefault();
@@ -62,7 +91,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.target.innerText === 'Edit') {
       console.log('edit');
       let quoteFooter = document.querySelector(`.footer-${e.target.dataset.id}`)
-      quoteFooter.innerHTML += addEditForm(e.target.dataset.id)
+      let currentQuote = allQuotes.find(q => q.id == e.target.dataset.id)
+      console.log(currentQuote);
+      if (quoteFooter.innerHTML.includes('form') === false) {
+        quoteFooter.innerHTML += addEditForm(e.target.dataset.id)
+        updateQuoteForm = document.querySelector('#update-quote-form')
+        updateQuoteForm.querySelector('#update-author').value = currentQuote.author
+        updateQuoteForm.querySelector('#update-quote').value = currentQuote.quote
+      }
+
     }
 
     if (e.target.className === 'btn-success') {
@@ -75,9 +112,10 @@ document.addEventListener('DOMContentLoaded', () => {
           "Accept": "application/json"
         },
         body: JSON.stringify({
-          likes: e.target.firstElementChild.innerText
+          likes: parseInt(e.target.firstElementChild.innerText)
         })
       })
+      .then(fetchQuotes)
     }
   })
 
@@ -99,7 +137,10 @@ document.addEventListener('DOMContentLoaded', () => {
   function fetchQuotes() {
     fetch('http://localhost:3000/quotes')
       .then(r => r.json())
-      .then(quotes => renderAllQuotes(quotes))
+      .then(quotes => {
+        allQuotes = quotes
+        renderAllQuotes(quotes)
+      })
   }
 
   function renderQuote(quote) {

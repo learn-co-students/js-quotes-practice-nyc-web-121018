@@ -3,19 +3,19 @@
     {
       "id": 2,
       "quote": "There are no secrets to success. It is the result of preparation, hard work, and learning from failure.",
-      "likes": "4",
+      "likes": 14,
       "author": "Collin Powell"
     },
     {
       "id": 3,
       "quote": "Tell me and I forget, teach me and I remember, involve me and I learn.",
-      "likes": 1,
-      "author": "Benjamin Franklin"
+      "likes": 0,
+      "author": "Benjamin Franklinasdfvbnm"
     },
     {
       "id": 4,
       "quote": "Our greatest glory is not in never falling, but in rising everytime we fall.",
-      "likes": "6",
+      "likes": 15,
       "author": "Confucius"
     },
     {
@@ -23,12 +23,6 @@
       "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
       "likes": 1,
       "author": "Winston Churchhill"
-    },
-    {
-      "quote": "pee",
-      "likes": 0,
-      "author": "pee",
-      "id": 6
     }
   ]
 }
