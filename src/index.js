@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
     allQuotes = quotes
     displayAllQuotes(allQuotes)
   })
-})
 
 quoteContainer.addEventListener("click" , e =>{
   if(e.target.className === "btn-success"){
@@ -71,13 +70,10 @@ quoteContainer.addEventListener("click" , e =>{
 
 document.addEventListener("submit", e=>{
         e.preventDefault()
-        // console.log(e)
         if(e.target.id === "editQuote"){
-          // console.log("helloagain");
           let quoteId = e.target.dataset.id
           let quoteInput = e.target.querySelector("#edit-quote").value
           let authorInput = e.target.querySelector("#edit-author").value
-          // console.log(e.target)
           let currentQuote = allQuotes.find(quote=>{
             return quote.id === parseInt(e.target.dataset.id)
           })
@@ -102,13 +98,8 @@ document.addEventListener("submit", e=>{
         }
 
         if(e.target.id === "new-quote-form"){
-          // console.log("hellloooo");
-          // newQuoteForm.addEventListener("submit", e=>{
-          //   e.preventDefault()
             let quoteInput = document.getElementById("new-quote").value
-            // console.log(quoteInput)
             let authorInput = document.getElementById("author").value
-            // console.log(authorInput)
             fetch("http://localhost:3000/quotes",{
               method: "POST",
               headers:{
@@ -128,23 +119,25 @@ document.addEventListener("submit", e=>{
           }
   })
 
-function displayAllQuotes(allQuotes){
-  allQuotes.forEach(quote=>{
-    displaySingleQuote(quote)
-  })
+  function displayAllQuotes(allQuotes){
+    allQuotes.forEach(quote=>{
+      displaySingleQuote(quote)
+    })
+  }
+
+  function displaySingleQuote(quote){
+    quoteContainer.innerHTML += `
+    <li class='quote-card'>
+    <blockquote class="blockquote">
+      <p class="mb-0">${quote.quote}</p>
+      <footer class="blockquote-footer">${quote.author}</footer>
+      <br>
+      <button class='btn-success' data-id="${quote.id}" >Likes: <span>${quote.likes}</span></button>
+      <button class='edit' data-id="${quote.id}" >Edit</button>
+      <button class='btn-danger' data-id="${quote.id}" >Delete</button>
+    </blockquote>
+  </li>
+    `
 }
 
-function displaySingleQuote(quote){
-  quoteContainer.innerHTML += `
-  <li class='quote-card'>
-  <blockquote class="blockquote">
-    <p class="mb-0">${quote.quote}</p>
-    <footer class="blockquote-footer">${quote.author}</footer>
-    <br>
-    <button class='btn-success' data-id="${quote.id}" >Likes: <span>${quote.likes}</span></button>
-    <button class='edit' data-id="${quote.id}" >Edit</button>
-    <button class='btn-danger' data-id="${quote.id}" >Delete</button>
-  </blockquote>
-</li>
-  `
-}
+})

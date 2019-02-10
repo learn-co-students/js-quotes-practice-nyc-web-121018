@@ -3,7 +3,7 @@
     {
       "id": 3,
       "quote": "Tell me and I forget, teach me and I remember, involve me and I learn.",
-      "likes": 8,
+      "likes": 9,
       "author": "Benjie Franklin"
     },
     {
@@ -17,12 +17,6 @@
       "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
       "likes": 2,
       "author": "Winston Churchhill"
-    },
-    {
-      "id": 6,
-      "quote": "Perseverance is the hard work you do after you get tired of doing the hard work you already did.",
-      "likes": 2,
-      "author": "Newt Gingrich"
     },
     {
       "quote": "The journey of a thousand miles begins with a single step!!!!!!!!!!!!!!",
